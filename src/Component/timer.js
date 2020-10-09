@@ -50,9 +50,10 @@ export default class Timer extends Component {
   }
   componentDidMount() {
     this.seconds = setInterval(() => {
-      this.setState(() => ({
-        seconds: this.state.seconds + 1,
-      }));
+      if (this.state.seconds < 60)
+        this.setState(() => ({
+          seconds: this.state.seconds + 1,
+        }));
     }, 1000);
   }
 
