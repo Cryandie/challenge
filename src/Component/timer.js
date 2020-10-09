@@ -58,7 +58,6 @@ export default class Timer extends Component {
         this.setState(() => ({
           seconds: (this.state.seconds = 0),
           minutes: this.state.minutes + 1,
-          hours: this.state.hours + 1,
         }));
     }, 1000);
   }
