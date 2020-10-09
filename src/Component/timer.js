@@ -28,7 +28,7 @@ export default class Timer extends Component {
   };
   render() {
     return (
-      <div clasName="count">
+      <div>
         <h3 className="title">Timer :</h3>
         <Table striped bordered hover variant="dark" className="Table">
           <tbody>
